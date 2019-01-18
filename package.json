@@ -1,0 +1,40 @@
+{
+  "name": "sito-valentin",
+  "version": "1.0.0",
+  "description": "A Vue.js project",
+  "author": "vgribdev <gribdeveloper@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "yarn serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.9",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.0.1",
+    "autoprefixer": "^9.1.5",
+    "node-sass": "^4.9.3",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "IE 11"
+  ]
+}

@@ -1,0 +1,60 @@
+$thin-phone-size: 360px
+$phone-size: 600px
+$tablet-size: 992px
+$desktop-size: 1200px
+$hd-desktop-size: 1920px
+$ultrahd-desktop-size: 2470px
+
+=breakpoint($class)
+  @if $class == '<thin-phone'
+    @media (max-width: $thin-phone-size)
+        @content
+
+  @if $class == '>thin-phone'
+    @media (min-width: $thin-phone-size)
+      @content
+
+  @if $class == '<phone'
+    @media (max-width: $phone-size)
+        @content
+
+  @if $class == '>phone'
+    @media (min-width: $phone-size)
+      @content
+
+  @if $class == '<tablet'
+    @media (max-width: $tablet-size)
+      @content
+
+  @if $class == '>tablet'
+    @media (min-width: $tablet-size)
+      @content
+
+  @if $class == '<desktop'
+    @media (max-width: $desktop-size)
+      @content
+
+  @if $class == '>desktop'
+    @media (min-width: $desktop-size)
+      @content
+
+  @if $class == '<hd-desktop'
+    @media (max-width: $hd-desktop-size)
+      @content
+
+  @if $class == '>hd-desktop'
+    @media (min-width: $hd-desktop-size)
+      @content
+
+  @if $class == '<4k-desktop'
+    @media (max-width: $ultrahd-desktop-size)
+      @content
+
+  @if $class == '>4k-desktop'
+    @media (min-width: $ultrahd-desktop-size)
+      @content
+
+=d-grid($nColumns, $gap: 1em)
+  display: grid
+  grid-gap: $gap
+  grid-template-columns: repeat($nColumns, 1fr)
